@@ -14,8 +14,7 @@ jobs:
       
       - name: Install dependencies
         run: |
-          sudo apt-get install apktool -y
-          sudo apt-get purge apktool -y
+          sudo apt-get install $(apt-cache depends apktool | grep Depends | sed "s/.*ends:\ //" | tr '\n' ' ')
           sudo cp apk* /usr/local/bin/
           sudo apt install ./megacmd.deb
           mega-get https://mega.nz/file/gVAjmQiI#TcijYBY_qyhUymCbuz3QaKfKucLUSNn0GYay93DUMgA
