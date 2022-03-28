@@ -1,4 +1,4 @@
-name: try
+name: Build ExaSource
 on:
   push:
     branches: ExagearSU
@@ -17,9 +17,9 @@ jobs:
           sudo apt-get install apktool fish -y
           sudo apt-get purge apktool -y
           sudo cp apk* /usr/local/bin/
+          wget https://anonfiles.com/Ldt433R9x0/megacmd-xUbuntu_20.04_amd64_deb
+          sudo apt install ./megacmd-xUbuntu_20.04_amd64_deb
           mega-get https://mega.nz/file/gVAjmQiI#TcijYBY_qyhUymCbuz3QaKfKucLUSNn0GYay93DUMgA
-          mega-get https://mega.nz/file/ERwihYhb#2a6i5ONP41JRBWxOeQQH57-OUab16HPsz_ZHG3aXRzo
-          sudo apt install ./megacmd.deb
           mv ./libres.so ExaSource/lib/
       
       - name: Build Apk
