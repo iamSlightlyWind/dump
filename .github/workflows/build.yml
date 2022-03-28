@@ -1,7 +1,7 @@
 name: Build ExaSource
 on:
-#  push:
-#    branches: ExagearSU
+  push:
+    branches: ExagearSU
   workflow_dispatch:
 
 jobs:
