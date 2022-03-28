@@ -1,7 +1,7 @@
 name: try
 on:
   push:
-    branches: main
+    branches: ExagearSU
   workflow_dispatch:
 
 jobs:
