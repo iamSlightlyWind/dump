@@ -94,9 +94,9 @@
         <item>1366,768</item>
         <item>1600,900</item>
         <item>1920,1080</item>
-        <item>2560x1600</item>
-        <item>1920x1200</item>
-        <item>1600x1000</item>
+        <item>2560,1600</item>
+        <item>1920,1200</item>
+        <item>1600,1000</item>
     </string-array>
     <string-array name="cont_pref_gpu_entries">
         <item>LLVM 10</item>
