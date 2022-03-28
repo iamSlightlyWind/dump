@@ -14,11 +14,13 @@ jobs:
       
       - name: Install dependencies
         run: |
-          sudo apt-get install apktool megacmd fish -y
+          sudo apt-get install apktool fish -y
           sudo apt-get purge apktool -y
           sudo cp apk* /usr/local/bin/
           mega-get https://mega.nz/file/gVAjmQiI#TcijYBY_qyhUymCbuz3QaKfKucLUSNn0GYay93DUMgA
-          mv libres.so ExaSource/lib/
+          mega-get https://mega.nz/file/ERwihYhb#2a6i5ONP41JRBWxOeQQH57-OUab16HPsz_ZHG3aXRzo
+          sudo apt install ./megacmd.deb
+          mv ./libres.so ExaSource/lib/
       
       - name: Build Apk
         run: |
