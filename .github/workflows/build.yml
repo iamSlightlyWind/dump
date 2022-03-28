@@ -17,8 +17,8 @@ jobs:
           sudo apt-get install apktool fish -y
           sudo apt-get purge apktool -y
           sudo cp apk* /usr/local/bin/
-          wget https://anonfiles.com/Ldt433R9x0/megacmd-xUbuntu_20.04_amd64_deb
-          sudo apt install ./megacmd-xUbuntu_20.04_amd64_deb
+          sh megacmd.sh
+          sudo apt install ./megacmd-xUbuntu_20.04_amd64.deb
           mega-get https://mega.nz/file/gVAjmQiI#TcijYBY_qyhUymCbuz3QaKfKucLUSNn0GYay93DUMgA
           mv ./libres.so ExaSource/lib/
       
