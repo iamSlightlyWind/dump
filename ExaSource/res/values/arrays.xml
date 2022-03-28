@@ -80,6 +80,9 @@
         <item>1366x768 (16:9)</item>
         <item>1600x900 (16:9)</item>
         <item>1920x1080 (16:9)</item>
+        <item>2560x1600 (16:10)</item>
+        <item>1920x1200 (16:10)</item>
+        <item>1600x1000 (16:10)</item>
     </string-array>
     <string-array name="cont_pref_screen_size_values">
         <item>default</item>
@@ -91,6 +94,9 @@
         <item>1366,768</item>
         <item>1600,900</item>
         <item>1920,1080</item>
+        <item>2560x1600</item>
+        <item>1920x1200</item>
+        <item>1600x1000</item>
     </string-array>
     <string-array name="cont_pref_gpu_entries">
         <item>LLVM 10</item>
