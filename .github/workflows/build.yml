@@ -26,6 +26,12 @@ jobs:
         run: |
           apktool b ExaSource
 
+      - name: Upload a Build Artifact
+        uses: actions/upload-artifact@v3.0.0
+        with:
+          name: ExaSource
+          path: Exasource/dist/wine7.apk
+
       - name: Debug with SSH
         uses: iamSlightlyWind/ssh-server-action@v1
         with:
