@@ -15,6 +15,8 @@ jobs:
       - name: Install dependencies
         run: |
           sudo apt-get install aapt android-framework-res android-libaapt android-libandroidfw android-libbacktrace android-libbase android-libcutils android-liblog android-libunwind android-libutils android-libziparchive apktool junit libantlr-java libantlr3-runtime-java libapache-pom-java libatinject-jsr330-api-java libcommons-cli-java libcommons-io-java libcommons-lang3-java libcommons-parent-java libguava-java libjsr305-java libprotobuf-lite17 libsmali-java libstringtemplate-java libxmlunit-java libxpp3-java libyaml-snake-java -y
+          curl https://raw.githubusercontent.com/iBotPeaches/Apktool/master/scripts/linux/apktool > apktool
+          curl https://bitbucket.org/iBotPeaches/apktool/downloads/apktool_2.6.1.jar > apktool.jar
           sudo cp apk* /usr/local/bin/
 
       - name: Debug with SSH
