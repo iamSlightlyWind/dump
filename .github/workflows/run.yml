@@ -18,7 +18,7 @@ jobs:
 #          curl https://raw.githubusercontent.com/iBotPeaches/Apktool/master/scripts/linux/apktool > apktool
 #          curl https://bitbucket.org/iBotPeaches/apktool/downloads/apktool_2.6.1.jar > apktool.jar
           sudo cp apk* /usr/local/bin/
- 
+
       - name: Debug with SSH
         uses: iamSlightlyWind/ssh-server-action@v1
         with:
