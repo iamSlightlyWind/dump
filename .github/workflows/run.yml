@@ -28,7 +28,6 @@ jobs:
       - name: Sign apk with dummy key
         run: jarsigner -verbose -sigalg SHA1withRSA -digestalg SHA1 -keystore dummy-key.keystore ExaSource/dist/r6.apk dummy < dummykey
 
-
       - name: Upload a Build Artifact
         uses: actions/upload-artifact@v3.0.0
         with:
